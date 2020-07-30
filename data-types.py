@@ -54,9 +54,40 @@ print(apply_offer)
 # the username must be no more than 20 characters
 # the password must not be the same as the username
 # bonus neither the username or password can start or end with whitespace
-
+username = 'codeup'
+password = 'notastrongpassword'
 
 pass_char = len(password)
 user_char = len(username)
 
 is_valid = pass_char > 5 and user_char < 20 
+
+print(is_valid)
+
+# Bonus questions:
+
+fruits = ['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
+
+numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17, 19, 23, 256, -8, -4, -2, 5, -9]
+
+output = [fruit.upper() for fruit in fruits]
+# print(output)
+
+capitalized_fruits = [fruit.capitalize() for fruit in fruits]
+print(capitalized_fruits)
+
+
+
+
+
+def more_than_two_vowels(seq):
+    vowels = 'aeiou'
+    count = 0
+    for i in seq:
+        if i in vowels:
+            count = count + 1
+    if count > 2:
+        return seq
+
+fruits_with_more_than_two_vowels = [more_than_two_vowels(i) for i in fruits]
+print(fruits_with_more_than_two_vowels)
