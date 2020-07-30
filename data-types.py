@@ -74,7 +74,7 @@ output = [fruit.upper() for fruit in fruits]
 # print(output)
 
 capitalized_fruits = [fruit.capitalize() for fruit in fruits]
-print(capitalized_fruits)
+# print(capitalized_fruits)
 
 
 
@@ -86,8 +86,7 @@ def more_than_two_vowels(seq):
     for i in seq:
         if i in vowels:
             count = count + 1
-    if count > 2:
-        return seq
+    return count
 
-fruits_with_more_than_two_vowels = [more_than_two_vowels(i) for i in fruits]
+fruits_with_more_than_two_vowels = [fruit for fruit in fruits if more_than_two_vowels(fruit) > 2]
 print(fruits_with_more_than_two_vowels)
