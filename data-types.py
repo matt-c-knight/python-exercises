@@ -47,3 +47,16 @@ is_premium = True
 apply_offer = (bought_more_than_two and not is_expired) or is_premium
 
 print(apply_offer)
+
+# Create a variable that holds a boolean value for each of the following conditions:
+
+# the password must be at least 5 characters
+# the username must be no more than 20 characters
+# the password must not be the same as the username
+# bonus neither the username or password can start or end with whitespace
+
+
+pass_char = len(password)
+user_char = len(username)
+
+is_valid = pass_char > 5 and user_char < 20 
