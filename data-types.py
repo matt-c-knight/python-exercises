@@ -90,3 +90,25 @@ def more_than_two_vowels(seq):
 
 fruits_with_more_than_two_vowels = [fruit for fruit in fruits if more_than_two_vowels(fruit) > 2]
 print(fruits_with_more_than_two_vowels)
+
+def two_vowels(seq):
+    vowels = 'aeiou'
+    count = 0
+    for i in seq:
+        if i in vowels:
+            count = count + 1
+    return count
+fruits_with_two_vowels = [fruit for fruit in fruits if more_than_two_vowels(fruit) == 2]
+print(fruits_with_two_vowels)
+
+def char_counter(seq):
+    count = 0
+    for i in seq:
+        count = count + 1
+    return count
+fruits_with_more_than_five = [fruit for fruit in fruits if char_counter(fruit) > 5]
+print(fruits_with_more_than_five)
+
+
+fruit_length_count = [len(fruit) for fruit in fruits]
+print(fruit_length_count)
