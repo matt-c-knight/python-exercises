@@ -109,6 +109,12 @@ def char_counter(seq):
 fruits_with_more_than_five = [fruit for fruit in fruits if char_counter(fruit) > 5]
 print(fruits_with_more_than_five)
 
+fruits_with__five = [fruit for fruit in fruits if char_counter(fruit) == 5]
+print(fruits_with_five)
+
+fruits_with_less_than_five = [fruit for fruit in fruits if char_counter(fruit) < 5]
+print(fruits_with_less_than_five)
+
 
 fruit_length_count = [len(fruit) for fruit in fruits]
 print(fruit_length_count)
@@ -125,4 +131,29 @@ fruits_with_letter_a = [fruit for fruit in fruits if have_an_a(fruit)]
 
 print(fruits_with_letter_a)
 
-even_numbers
+even_numbers = [num for num in numbers if num % 2 == 0]
+print(even_numbers)
+
+odd_numbers = [num for num in numbers if num % 2 != 0]
+print(odd_numbers)
+
+positive_numbers = [num for num in numbers if num > 0]
+print(positive_numbers)
+
+negative_numbers = [num for num in numbers if num < 0]
+print(negative_numbers)
+
+two_or_more = [num for num in numbers if num >= 10]
+print(two_or_more)
+
+numbers_squared = [num ** 2 for num in numbers]
+print(numbers_squared)
+
+odd_negative_numbers = [num for num in numbers if num % 2 != 0 and num < 0]
+print(odd_negative_numbers)
+
+numbers_plus_5 = [num + 5 for num in numbers]
+print(numbers_plus_5)
+
+
+
