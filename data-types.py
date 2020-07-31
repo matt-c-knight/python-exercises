@@ -112,3 +112,17 @@ print(fruits_with_more_than_five)
 
 fruit_length_count = [len(fruit) for fruit in fruits]
 print(fruit_length_count)
+
+def have_an_a(word):
+    letter = 'Aa'
+    a_word = []
+    for i in word:
+        if i in letter:
+            a_word.append(i)
+    return a_word
+
+fruits_with_letter_a = [fruit for fruit in fruits if have_an_a(fruit)]
+
+print(fruits_with_letter_a)
+
+even_numbers
