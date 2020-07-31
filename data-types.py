@@ -1,3 +1,5 @@
+
+
 # Write some Python code, that is, variables and operators, to describe the following scenarios. Do not worry about the real operations to get the values, the goal of these exercises is to understand how real world conditions can be represented with code.
 
 # You have rented some movies for your kids: 
@@ -146,6 +148,18 @@ print(negative_numbers)
 two_or_more = [num for num in numbers if num >= 10]
 print(two_or_more)
 
+
+
+
+
+
+
+
+
+
+
+
+
 numbers_squared = [num ** 2 for num in numbers]
 print(numbers_squared)
 
@@ -154,6 +168,10 @@ print(odd_negative_numbers)
 
 numbers_plus_5 = [num + 5 for num in numbers]
 print(numbers_plus_5)
+# ----------------------------------------------
+# total = len(students)
+# print(total)
 
-
+# light_coffee = [student["coffee_preference"] for student in students if student["coffee_preference"] == "light"]
+# print(len(light_coffee))
 
