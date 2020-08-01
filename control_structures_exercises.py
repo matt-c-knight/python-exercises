@@ -46,5 +46,35 @@ while n < 100:
     n += 2
 # Follow each number with a new line.
 # Alter your loop count backwards by 5's from 100 to -10.
+x = 100
+while x > -15:
+    print(x)
+    x -= 5
 # Create a while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. 
-# Output should equal:
+y = 2
+while y < 1000000:
+    print(y)
+    y *= y
+    
+# Write a loop that uses print to create the output shown below.
+# 100
+# 95
+# 90
+# 85
+# 80
+# 75
+# 70
+# 65
+# 60
+# 55
+# 50
+# 45
+# 40
+# 35
+# 30
+# 25
+# 20
+# 15
+# 10
+# 5
+   
