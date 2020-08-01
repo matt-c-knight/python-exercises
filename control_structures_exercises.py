@@ -78,5 +78,5 @@ while y < 1000000:
 # 10
 # 5
    
-i = 100
-while i >
+# i = 100
+# while i >
