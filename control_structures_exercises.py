@@ -56,27 +56,7 @@ while y < 1000000:
     print(y)
     y *= y
     
-# Write a loop that uses print to create the output shown below.
-# 100
-# 95
-# 90
-# 85
-# 80
-# 75
-# 70
-# 65
-# 60
-# 55
-# 50
-# 45
-# 40
-# 35
-# 30
-# 25
-# 20
-# 15
-# 10
-# 5
+
    
 # i = 100
 # while i >
