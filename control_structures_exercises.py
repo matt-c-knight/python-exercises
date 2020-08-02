@@ -57,6 +57,13 @@ while y < 1000000:
     y *= y
     
 
-   
-# i = 100
-# while i >
+   For Loops
+
+# Write some code that prompts the user for a number, 
+# then shows a multiplication table up through 10 for that number.
+user_input = int(input("Please provide a number between one and ten"))
+
+for num in range(1,11):
+    print(user_input * num)
+
+# For example, if the user enters 7, your program should output:
