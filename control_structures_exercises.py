@@ -57,7 +57,7 @@ while y < 1000000:
     y *= y
     
 
-   For Loops
+#    For Loops
 
 # Write some code that prompts the user for a number, 
 # then shows a multiplication table up through 10 for that number.
@@ -67,3 +67,19 @@ for num in range(1,11):
     print(user_input * num)
 
 # For example, if the user enters 7, your program should output:
+
+# Create a for loop that uses print to create the output shown below.
+
+# 1
+# 22
+# 333
+# 4444
+# 55555
+# 666666
+# 7777777
+# 88888888
+# 999999999
+
+
+for x in range(1,10): 
+    print(str(x)*x)
