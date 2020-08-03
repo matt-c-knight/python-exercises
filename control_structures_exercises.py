@@ -80,6 +80,35 @@ for num in range(1,11):
 # 88888888
 # 999999999
 
-
 for x in range(1,10): 
     print(str(x)*x)
+    
+# Prompt the user for an odd number between 1 and 50. 
+# Use a loop and a break statement to continue prompting the user if they enter invalid input. 
+# (Hint: use the isdigit method on strings to determine this). 
+# Use a loop and the continue statement to output all the odd numbers between 1 and 50, 
+# except for the number the user entered.
+
+response = int(input("Please provide a number between 1 and 50"))
+
+
+
+# for res in response:
+#     if response < 1 or response < 50:
+#         int(input("Please provide a number between 1 and 50"))
+#     elif response >= 1 and response <= 50:
+#         print("correct")
+#         break
+
+odd_number = input("Enter an odd number between 1 and 50")
+input_val = True
+while(input):
+    if odd_number.isdigit() and int(odd_number) % 2 == 1:
+        break
+    else:
+        odd_number = input("Please enter an odd number")
+odd_number = int(odd_number)
+for num in range(1,50):
+    if num % 2 == 0 or num == odd_number:
+        continue  
+    print("Success")  
