@@ -163,3 +163,39 @@ question_four()
 
 
 
+# Convert given number grades into letter grades.
+
+# Prompt the user for a numerical grade from 0 to 100.
+# Display the corresponding letter grade.
+# Prompt the user to continue.
+# Assume that the user will enter valid integers for the grades.
+# The application should only continue if the user agrees to.
+# Grade Ranges:
+def grade_checker():
+    num_grade = int(input("Please provide your grade between 0 and 100: "))
+    if num_grade > 87:
+        print("You received an A")
+        grade_checker()
+    elif num_grade > 79:
+        print("You received a B")
+        grade_checker()
+    elif num_grade > 66:
+        print("You received a C")
+        grade_checker()
+    elif num_grade > 59:
+        print("You received a D")
+        grade_checker()
+    elif num_grade < 60:
+        print("You received an F")
+        grade_checker()
+   
+
+grade_checker()
+
+
+# Create a list of dictionaries where each dictionary represents a book that you have read. 
+# Each dictionary in the list should have the keys title, author, and genre.
+# Loop through the list and print out information about each book.
+
+# Prompt the user to enter a genre, then loop through your books list and 
+# print out the titles of all the books in that genre.
