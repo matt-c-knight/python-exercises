@@ -113,7 +113,7 @@ for num in range(1,50):
 # For the multiples of five print "Buzz".
 # For numbers which are multiples of both three and five print "FizzBuzz".
 
-for fizz in range(51):
+for fizz in range(101):
     if fizz % 3 == 0 and fizz % 5 == 0:
         print("fizzbuzz")
         continue
