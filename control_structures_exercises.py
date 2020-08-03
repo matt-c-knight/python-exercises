@@ -89,16 +89,7 @@ for x in range(1,10):
 # Use a loop and the continue statement to output all the odd numbers between 1 and 50, 
 # except for the number the user entered.
 
-response = int(input("Please provide a number between 1 and 50"))
 
-
-
-# for res in response:
-#     if response < 1 or response < 50:
-#         int(input("Please provide a number between 1 and 50"))
-#     elif response >= 1 and response <= 50:
-#         print("correct")
-#         break
 
 odd_number = input("Enter an odd number between 1 and 50")
 input_val = True
@@ -112,3 +103,54 @@ for num in range(1,50):
     if num % 2 == 0 or num == odd_number:
         continue  
     print(f"Here is the odd number: {num}")  
+
+
+# Fizzbuzz
+
+# One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
+# Write a program that prints the numbers from 1 to 100.
+# For multiples of three print "Fizz" instead of the number
+# For the multiples of five print "Buzz".
+# For numbers which are multiples of both three and five print "FizzBuzz".
+
+for fizz in range(51):
+    if fizz % 3 == 0 and fizz % 5 == 0:
+        print("fizzbuzz")
+        continue
+    elif fizz % 3 == 0:
+        print("fizz")
+        continue
+    elif fizz % 5 == 0:
+        print("buzz")
+        continue
+    print(fizzbuzz)
+
+# Display a table of powers.
+
+# Prompt the user to enter an integer.
+# Display a table of squares and cubes from 1 to the value entered.
+# Ask if the user wants to continue.
+# Assume that the user will enter valid data.
+# Only continue if the user agrees to.
+
+numbers = []
+squares = []
+cubes = []
+
+
+start = 1 
+input_val = int(input("Please enter an integer"))
+
+
+for count in range (start, input_val + 1) :
+    numbers.append(count)
+    squares.append(count**2)
+    cubes.append(count**3)
+
+print(numbers)
+print(squares)
+print(cubes)
+
+# print("numbers: " + numbers)
+# print("squares: " + squares)
+# print("cubes  : " + cubes)
