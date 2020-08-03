@@ -1,20 +1,20 @@
 # Conditional Basics
 
 # prompt the user for a day of the week, print out whether the day is Monday or not
-answer = input("What day of week is it?")
+answer = input("What day of week is it?: ")
 if answer == "Monday":
     print("Yes, Monday it is!")
 else:
     print("It's not Monday today.")
 # prompt the user for a day of the week, print out whether the day is a weekday or a weekend
-answer_two = input("What day of week is it?")
+answer_two = input("What day of week is it?: ")
 if answer_two == "Monday" or answer_two == "Tuesday" or answer_two == "Wednesday" or answer_two == "Thursday" or answer_two == "Friday":
     print("It's a weekday.")
 else:
     print("It's the weekend!")
 # create variables and make up values for
 # the number of hours worked in one week
-hours_worked = int(input("How many hours did you work?"))
+hours_worked = int(input("How many hours did you work?: "))
 # the hourly rate
 rate = 14
 # how much the week's paycheck will be
@@ -61,7 +61,7 @@ while y < 1000000:
 
 # Write some code that prompts the user for a number, 
 # then shows a multiplication table up through 10 for that number.
-user_input = int(input("Please provide a number between one and ten"))
+user_input = int(input("Please provide a number between one and ten: "))
 
 for num in range(1,11):
     print(user_input * num)
@@ -91,7 +91,7 @@ for x in range(1,10):
 
 
 
-odd_number = input("Enter an odd number between 1 and 50")
+odd_number = input("Enter an odd number between 1 and 50: ")
 input_val = True
 while(input):
     if odd_number.isdigit() and int(odd_number) % 2 == 1:
@@ -103,6 +103,12 @@ for num in range(1,50):
     if num % 2 == 0 or num == odd_number:
         continue  
     print(f"Here is the odd number: {num}")  
+
+positive_int = int(input("Please enter a positive integer: "))
+
+while positive_int > 0:
+    print(positive_int)
+    positive_int -= 1
 
 
 # Fizzbuzz
@@ -139,7 +145,7 @@ def question_four():
     squares = []
     cubes = []
     start = 1 
-    input_val = int(input("Please enter an integer"))
+    input_val = int(input("Please enter an integer: "))
     for count in range (start, input_val + 1) :
         numbers.append(count)
         squares.append(count**2)
@@ -147,7 +153,7 @@ def question_four():
     print(numbers)
     print(squares)
     print(cubes)
-    cont = input("Would you like to continue: yes or no?")
+    cont = input("Would you like to continue: yes or no?: ")
     if cont == "yes":
         question_four()
     
@@ -156,6 +162,4 @@ question_four()
 
 
 
-# print("numbers: " + numbers)
-# print("squares: " + squares)
-# print("cubes  : " + cubes)
+
