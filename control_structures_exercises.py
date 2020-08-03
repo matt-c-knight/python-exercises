@@ -123,7 +123,7 @@ for fizz in range(51):
     elif fizz % 5 == 0:
         print("buzz")
         continue
-    print(fizzbuzz)
+    
 
 # Display a table of powers.
 
@@ -133,23 +133,28 @@ for fizz in range(51):
 # Assume that the user will enter valid data.
 # Only continue if the user agrees to.
 
-numbers = []
-squares = []
-cubes = []
+
+def question_four():
+    numbers = []
+    squares = []
+    cubes = []
+    start = 1 
+    input_val = int(input("Please enter an integer"))
+    for count in range (start, input_val + 1) :
+        numbers.append(count)
+        squares.append(count**2)
+        cubes.append(count**3)
+    print(numbers)
+    print(squares)
+    print(cubes)
+    cont = input("Would you like to continue: yes or no?")
+    if cont == "yes":
+        question_four()
+    
+
+question_four()
 
 
-start = 1 
-input_val = int(input("Please enter an integer"))
-
-
-for count in range (start, input_val + 1) :
-    numbers.append(count)
-    squares.append(count**2)
-    cubes.append(count**3)
-
-print(numbers)
-print(squares)
-print(cubes)
 
 # print("numbers: " + numbers)
 # print("squares: " + squares)
