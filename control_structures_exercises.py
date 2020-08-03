@@ -199,3 +199,24 @@ grade_checker()
 
 # Prompt the user to enter a genre, then loop through your books list and 
 # print out the titles of all the books in that genre.
+
+books = [
+    {"title": "Statistics for Absolute Beginners",
+    "author": "O Theobald",
+    "genre": "Math/Stats" },
+    {"title": "A Smarter Way to Learn Javascript",
+    "author": "Mark Myers",
+    "genre": "Computers"},
+    {"title": "Managerial Accounting for Dummies",
+    "author": "Mark Holtzman",
+    "genre": "Business/Accounting"}
+]
+
+for book in books:
+    print(book)
+
+book_genre = input("Please enter a genre: Math/Stats, Computers, or Business/Accounting: ")
+
+for book in books:
+    if book["genre"] == book_genre:
+        print(book["title"])
