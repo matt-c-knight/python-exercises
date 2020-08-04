@@ -49,3 +49,33 @@ calculate_tip(.3, 40)
 # Define a function named apply_discount. 
 # It should accept a original price, and a discount percentage, 
 # and return the price after the discount is applied.
+def apply_discount(price,discount):
+    discount_amt = price * discount
+    total = price - discount_amt
+    return total
+
+apply_discount(25,.10)
+
+# Define a function named handle_commas. 
+# It should accept a string that is a number that contains commas 
+# in it as input, and return a number as output.
+def handle_commas(num):
+    num_list = list(num)
+    for number in num_list:
+        if number == ",":
+            num_list.remove(number)
+    new_list = ''.join(num_list)
+    new_list = int(new_list)
+    return new_list
+    
+
+       # for number in num_list:
+    #     if int(number):
+    #         output.append(int(number))
+    #     else:
+    #         continue
+# Define a function named get_letter_grade. 
+# It should accept a number and return the letter grade 
+# associated with that number (A-F).
+# Define a function named remove_vowels that accepts a string 
+# and returns a string with all the vowels removed.
