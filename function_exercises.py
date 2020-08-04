@@ -5,6 +5,7 @@
 # It should accept one input and return True if the passed input 
 # is either the number or the string 2, False otherwise.
 def is_two(x):
+    assert type(x) == int or type(x) == str, "Invalid Input"
     if x == 2 or x == '2':
         return True
     else:
@@ -14,6 +15,7 @@ def is_two(x):
 # Define a function named is_vowel. It should return True if the 
 # passed string is a vowel, False otherwise.
 def is_vowel(letter):
+    assert type(letter) == str, "Invalid Input"
     letter = letter.lower()
     if letter in ['a', 'e', 'i', 'o', 'u']:
         return True
@@ -24,6 +26,7 @@ def is_vowel(letter):
 # if the passed string is a consonant, False otherwise. Use your is_vowel 
 # function to accomplish this.
 def is_consonant(letter):
+    assert type(letter) == str, "Invalid Input"
     if is_vowel(letter) == True:
         return False
     else:
@@ -33,6 +36,7 @@ def is_consonant(letter):
 # The function should capitalize the first letter of the word if
 # the word starts with a consonant.
 def cap_word(word):
+    assert type(word) == str, "Invalid Input"
     if is_consonant(word[0]) == True:
         return word.capitalize()
     else:
@@ -42,6 +46,7 @@ def cap_word(word):
 # It should accept a tip percentage (a number between 0 and 1) 
 # and the bill total, and return the amount to tip.
 def calculate_tip(tip,total):
+    assert type(tip) == float and type(total) == float or type(total) == int, "Invalid Input"
     amount = tip * total
     return round(amount, 2)
 
@@ -50,6 +55,7 @@ calculate_tip(.3, 40)
 # It should accept a original price, and a discount percentage, 
 # and return the price after the discount is applied.
 def apply_discount(price,discount):
+    assert type(price) == float or type(price) == int and type(discount) == float, "Invalid Input"
     discount_amt = price * discount
     total = price - discount_amt
     return total
@@ -115,15 +121,15 @@ def normalize_name(word):
         newest_word = newest_word.replace("_","")
     return newest_word
 
-Write a function named cumulative_sum that accepts a list of numbers and returns a list
-that is the cumulative sum of the numbers in the list.
-cumulative_sum([1, 1, 1]) returns [1, 2, 3]
-cumulative_sum([1, 2, 3, 4]) returns [1, 3, 6, 10]
+# Write a function named cumulative_sum that accepts a list of numbers and returns a list
+# that is the cumulative sum of the numbers in the list.
+# cumulative_sum([1, 1, 1]) returns [1, 2, 3]
+# cumulative_sum([1, 2, 3, 4]) returns [1, 3, 6, 10]
 
 def cumulative_sum(seq):
     new_list = []
     i = 0
     for x in seq:
         i += x
-        new_list = new_list.append(i)
+        new_list.append(i)
     return new_list
