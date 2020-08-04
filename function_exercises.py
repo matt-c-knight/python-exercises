@@ -94,3 +94,36 @@ def remove_vowels(word):
         if i in vowels:
             word = word.replace(i,"")
     return word
+
+# Define a function named normalize_name. It should accept a string and 
+# return a valid python identifier, that is:
+# anything that is not a valid python identifier should be removed
+# leading and trailing whitespace should be removed
+# everything should be lowercase
+# spaces should be replaced with underscores
+# for example:
+# Name will become name
+# First Name will become first_name
+# % Completed will become completed
+
+def normalize_name(word):
+    word = word.lower()
+    new_word = word.replace(" ", "_")
+    new_word = new_word.strip()
+    newest_word = new_word.replace("%","")
+    if newest_word[0] == "_" or newest_word[:-1] == "_":
+        newest_word = newest_word.replace("_","")
+    return newest_word
+
+Write a function named cumulative_sum that accepts a list of numbers and returns a list
+that is the cumulative sum of the numbers in the list.
+cumulative_sum([1, 1, 1]) returns [1, 2, 3]
+cumulative_sum([1, 2, 3, 4]) returns [1, 3, 6, 10]
+
+def cumulative_sum(seq):
+    new_list = []
+    i = 0
+    for x in seq:
+        i += x
+        new_list = new_list.append(i)
+    return new_list
