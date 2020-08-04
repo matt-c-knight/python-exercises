@@ -66,6 +66,7 @@ apply_discount(25,.10)
 # It should accept a string that is a number that contains commas 
 # in it as input, and return a number as output.
 def handle_commas(num):
+    assert type(num) == str, "Invalid Input"
     num_list = list(num)
     for number in num_list:
         if number == ",":
@@ -80,6 +81,7 @@ def handle_commas(num):
 # It should accept a number and return the letter grade 
 # associated with that number (A-F).
 def get_letter_grade(num):
+    assert type(num) == int, "Invalid Input"
     if num > 89:
         return "A"
     elif: num >79:
@@ -94,6 +96,7 @@ def get_letter_grade(num):
 # Define a function named remove_vowels that accepts a string 
 # and returns a string with all the vowels removed.
 def remove_vowels(word):
+    assert type(word) == str, "Invalid Input"
     word = word.lower()
     vowels = ['a', 'e', 'i', 'o', 'u']
     for i in word:
@@ -113,6 +116,7 @@ def remove_vowels(word):
 # % Completed will become completed
 
 def normalize_name(word):
+    assert type(word) == str, "Invalid Input"
     word = word.lower()
     new_word = word.replace(" ", "_")
     new_word = new_word.strip()
@@ -127,6 +131,7 @@ def normalize_name(word):
 # cumulative_sum([1, 2, 3, 4]) returns [1, 3, 6, 10]
 
 def cumulative_sum(seq):
+    assert type(seq) == list, "Invalid Input"
     new_list = []
     i = 0
     for x in seq:
