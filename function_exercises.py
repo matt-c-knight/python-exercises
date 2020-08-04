@@ -69,13 +69,28 @@ def handle_commas(num):
     return new_list
     
 
-       # for number in num_list:
-    #     if int(number):
-    #         output.append(int(number))
-    #     else:
-    #         continue
+ 
 # Define a function named get_letter_grade. 
 # It should accept a number and return the letter grade 
 # associated with that number (A-F).
+def get_letter_grade(num):
+    if num > 89:
+        return "A"
+    elif: num >79:
+        return "B"
+    elif: num > 69:
+        return "C"
+    elif: num > 59:
+        return "D"
+    else:
+        return "F"
+
 # Define a function named remove_vowels that accepts a string 
 # and returns a string with all the vowels removed.
+def remove_vowels(word):
+    word = word.lower()
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    for i in word:
+        if i in vowels:
+            word = word.replace(i,"")
+    return word
