@@ -220,3 +220,72 @@ book_genre = input("Please enter a genre: Math/Stats, Computers, or Business/Acc
 for book in books:
     if book["genre"] == book_genre:
         print(book["title"])
+
+# ---------------------------------------
+# Ryan's walkthrough notes
+# day_of_week.lower()
+# if day_of_week.lower() in ['saturday', 'sunday']
+    # print(f'{day_of_week}')
+while True:
+    user_number = input("Please provide a number bewteen 1 and 50: ")
+    
+    if user_number.isdigit():
+        user_number = int(user_number)
+
+        large_enough = user_number > 1
+        small_enough = user_number < 50
+        odd = user_number % 2 != 0
+
+        if large_enough and small_enough and odd:
+            break
+        else:
+            print("Must be less than 50 and greater than 1.")
+    else: 
+        print("Your input must be numerals.")
+
+user_number
+
+# for i in range(1,50,2):
+#     if i == user_number:
+#         print("Yikes!")
+#         continue
+#     print(f"Here is an odd number: {1}")
+
+# while True:
+#     user_number = input("Please input a positive integer:")
+
+#     if (user_number.isdigit() anbd
+    
+#         float(user_number) == int(user_number) and
+#         int(user_number > 0):
+
+#         user_number = int(user_number)
+
+#         break
+#     else: 
+#         print("Your input must be numeric, positive integer value.")
+
+# user_number
+
+# for i in range(1, 101):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("Fizzbuzz")
+#     elif i % 3 == 0:
+#         print("Fizz")
+#     elif i % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(i)
+
+# user_number = int(input("Please input an integer: "))
+
+# print("Here is your table!")
+
+# print("number | squared | cubed")
+# print("-------|---------|------")
+# for i in range(1, user_number +1):
+#     print(f"{1}   |  {i**2}  |  {i **3}")
+
+# wants_to_continue = input("Press Y or yes to continue...")
+
+
