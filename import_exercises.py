@@ -60,4 +60,51 @@ is_true = len([item['isActive'] for item in data if item['isActive' != False])
 print(is_true)
 # Number of inactive users
 is_false = len([item['isActive'] for item in data if item['isActive' == False])
+# Grand total of balances for all users
+total = 0
+for item in data:
+    val = item['balance']
+    val = val.replace("$","")
+    val = val.replace(",","")
+    total += float(val)
+print(total)
+# Average balance per user
+print(round(total/len(data),2))
+# User with the lowest balance
+new_list = []
+for item in data:
+    val = item['balance']
+    val = val.replace("$","")
+    val = val.replace(",","")
+    new_list.append(val)
+print(min(new_list))
+# User with the highest balance
+print(max(new_list))
+# Most common favorite fruit
+new_list = []
+for item in data:
+    val = item['favoriteFruit']
+    new_list.append(val)
+print(new_list)
+def most_frequent(List): 
+    # counter will hold the current highest value. 
+    # if curr_frequency is higher than counter, it will reassign num, which will be returned
+    counter = 0
+    num = List[0] 
+#  Use count method to count how many occurences of i, iterating thru all list iems     
+    for i in List: 
+        curr_frequency = List.count(i) 
+        if(curr_frequency> counter): 
+            counter = curr_frequency 
+            num = i 
+    return num 
+  
+
+
+
+
+
+
+
+
 
