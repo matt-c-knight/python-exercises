@@ -37,3 +37,27 @@ print(final)
 
 perm = list(permutations("abcd", 2))
 print(len(perm))
+
+# Total number of users
+# Number of active users
+# Number of inactive users
+# Grand total of balances for all users
+# Average balance per user
+# User with the lowest balance
+# User with the highest balance
+# Most common favorite fruit
+# Least most common favorite fruit
+# Total number of unread messages for all users
+import json
+from json import load
+json.load(profiles.json)
+f = open('profiles.json') 
+data = json.load(f)
+# Total number of users
+print(len(data))
+# Number of active users
+is_true = len([item['isActive'] for item in data if item['isActive' != False])
+print(is_true)
+# Number of inactive users
+is_false = len([item['isActive'] for item in data if item['isActive' == False])
+
