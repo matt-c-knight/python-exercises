@@ -15,16 +15,16 @@ hc("1,000")
 
 # How many different ways can you combine the letters 
 # from "abc" with the numbers 1, 2, and 3?
-list_1 = [a,b,c]
-list_2 = [1,2,3]
-import itertools
+
 # combos = itertools.permutations(list_1, len(list_2))
 # print(combos)
 # unique = []
 # for comb in combos:
 #     zipped = zip(comb, list_2)
 #     unique.append(list(zipped))
-
+list_1 = ["a","b","c"]
+list_2 = [1,2,3]
+import itertools
 list_3 = list(itertools.product(list_1,list_2))
 print(list_3)
 print(len(list_3))
