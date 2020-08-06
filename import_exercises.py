@@ -98,9 +98,34 @@ def most_frequent(List):
             counter = curr_frequency 
             num = i 
     return num 
-  
 
+most_frequent(new_list)
+    # Least most common favorite fruit
 
+  def least_frequent(List): 
+    # counter will hold the current highest value. 
+    # if curr_frequency is higher than counter, it will reassign num, which will be returned
+    counter = 10
+    num = List[0] 
+#  Use count method to count how many occurences of i, iterating thru all list iems     
+    for i in List: 
+        curr_frequency = List.count(i) 
+        if(curr_frequency< counter): 
+            counter = curr_frequency 
+            num = i 
+    return num 
+least_frequent(new_list)
+
+# Total number of unread messages for all users
+new_list = []
+for item in data:
+    new_list.append(item['greeting'])
+print(new_list)
+total = 0
+for item in new_list:
+    for i in item:
+        if i.isdigit():
+            total += 1
 
 
 
