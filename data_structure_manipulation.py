@@ -124,26 +124,27 @@ print(total)
 light_coffee = [student["coffee_preference"] for student in students if student["coffee_preference"] == "light"]
 print(len(light_coffee))
 # How many types of each pet are there?
-#Bibek helped with this one
-new_list = []
-pet_list = []
+# new_list = []
+# pet_list = []
 for student in students:
     new_list = student['pets']
     for item in new_list:
         pet_list = item['species']
     unique_list = set(pet_list)
-    print(len(unique_list))
-# def pet_type(species):
-#     unique = []
-#     if specfies not in unique:
-#         unique.append(species)
-#     return unique
-
-# for i in students["pets"]:
-    
+print(len(unique_list))
 
 # How many grades does each student have? Do they all have the same number of grades?
+total = 0
+for student in students:
+    total += len(student['grades'])
+    print(f"Individual total: {total}")
+print(f"The overall total is: {total}")
 # What is each student's grade average?
+for student in students:
+    total = sum(student['grades'])
+    average = total / len(student['grades'])
+    print(average)
+
 # How many pets does each student have?
 # How many students are in web development? data science?
 # What is the average number of pets for students in web development?
